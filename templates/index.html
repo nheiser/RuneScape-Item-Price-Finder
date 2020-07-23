@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+
+<script src="https://unpkg.com/vue"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+
+<title>OSRS Item Price Finder</title>
+
+
+<form action="/" method="post">
+
+	Search:<input type="text" name="name" value="">
+	<input type="submit" value="Submit">
+	
+</form>
+
+
+
+{% for item in items %}
+
+{% for detail in item %}
+
+	{{ detail }}
+
+{% endfor %}
+
+<br>
+
+{% endfor %}
+
+
+</html>
