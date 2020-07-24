@@ -69,6 +69,9 @@ def getPrice(id):
 	data = []
 	data.append(item["name"])
 	data.append(item["current"]["price"])
+	data.append(item["day30"]["change"])
+	data.append(item["day90"]["change"])
+	data.append(item["day180"]["change"])
 	
 	results.append(data)
 	

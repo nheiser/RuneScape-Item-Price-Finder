@@ -2,7 +2,7 @@
 
 <head>
 
-
+<link href="static/css/main.css" rel="stylesheet">
 <script src="https://unpkg.com/vue"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -23,11 +23,36 @@
 
 {% for item in items %}
 
-{% for detail in item %}
+<!--
+<table width="300">
+--> 
+<table>
+	<tr>
+		<th>{{ item[0] }}</th>
+		<th>Price</th>
+	</tr>
 
-	{{ detail }}
+	<tr>
+		<td>Today</td>
+		<td>{{ item[1] }}</td>
+	</tr>
+  
+	<tr>
+		<td>Last 30 Days</td>
+		<td>{{ item[2] }}</td>
+	</tr>
 
-{% endfor %}
+	<tr>
+		<td>Last 90 Days</td>
+		<td>{{ item[3] }}</td>
+	</tr>
+  
+	<tr>
+		<td>Last 180 Days</td>
+		<td>{{ item[4] }}</td>
+	</tr>
+
+</table>
 
 <br>
 
